@@ -31,14 +31,22 @@ def update_errorlog(log):
         print('[update_errorlog:%s]' % err)
     return data
 
-def set_status(stat):
-    sql = "UPDATE %s set report_status=%d where task_id=%d;" % (reportlink_table, stat, task_id)
-    cursor.execute(sql)
+def update_table(tablename, data, condition):
+    update_str = r'`'
+    for (k, v) in data.items():
+        v = str(v)
+        v = v.replace("'", '&#039;')
+        update_str += (k + r"`='" + v + r"',`")
+    update_str = update_str[:-2]
+    sql = 'UPDATE %s SET %s WHERE %s' % (tablename, update_str, condition)
+    print(sql)
+    
     try:
+        exec_result = cursor.execute(sql)
         db.commit()
     except Exception as err:
         db.rollback()
-        print("[set_status:%s] % err")
+        print("[update_table]:%s" % err)
 
 def get_task_info():
     sql = "SELECT id, mission_id, module_name, local_path, local_ip, pid, run_time, check_time FROM %s where id='%d'" % (task_table, task_id)
@@ -120,17 +128,20 @@ def main():
     ret_creat = create_report_task(reportlink_table, id, mission_id, module_name, local_path, local_ip, pid, run_time, check_time)
     if ret_creat != 0:
         update_errorlog("create_report_task Error, pls check\n")
-        set_status(2)
+        #set_status(2)
+        update_table(reportlink_table, {'report_status':2}, ("task_id=%d" % task_id))
         return -1
     
     ### get monitor link    
     ret_getlink = get_monitor_link(local_ip, local_path, pid, run_time, check_time)
     if ret_getlink != 0:
         update_errorlog("get_monitor_link Error, pls check\n")
-        set_status(2)
+        #set_status(2)
+        update_table(reportlink_table, {'report_status':2}, ("task_id=%d" % task_id))
         return -1
         
-    set_status(1)
+    #set_status(1)
+    update_table(reportlink_table, {'report_status':1}, ("task_id=%d" % task_id))
     return 0
 
     
