@@ -1,0 +1,167 @@
+*** Starting uWSGI 2.0.18 (64bit) on [Mon Dec  2 17:05:31 2019] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-11) on 02 December 2019 08:38:00
+os: Linux-3.10.0-327.el7.x86_64 #1 SMP Thu Nov 19 22:10:57 UTC 2015
+nodename: bjsjs_96_115
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 24
+current working directory: /search/odin/yinjingjing/python/sandbox_report/django_sandbox
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /search/odin/yinjingjing/python/sandbox_report/django_sandbox
+your processes number limit is 32768
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8032 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.1 (default, Sep 21 2018, 16:58:03)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-11)]
+Python main interpreter initialized at 0x23e2820
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+setting request body buffering size to 32768 bytes
+mapped 1209240 bytes (1180 KB) for 8 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x23e2820 pid: 12025 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 12025)
+spawned uWSGI worker 1 (pid: 12047, cores: 1)
+spawned uWSGI worker 2 (pid: 12048, cores: 1)
+spawned uWSGI worker 3 (pid: 12049, cores: 1)
+spawned uWSGI worker 4 (pid: 12050, cores: 1)
+spawned uWSGI worker 5 (pid: 12051, cores: 1)
+spawned uWSGI worker 6 (pid: 12052, cores: 1)
+spawned uWSGI worker 7 (pid: 12053, cores: 1)
+spawned uWSGI worker 8 (pid: 12055, cores: 1)
+*** Stats server enabled on 127.0.0.1:8033 fd: 24 ***
+current_page 1
+Not Found: /favicon.ico
+current_page 1
+current_page 1
+current_page 1
+current_page 1
+current_page 1
+current_page 1
+current_page 2
+current_page 1
+Not Found: /sandbox_report/mission_list/6/5
+Not Found: /sandbox_report/mission_list/6/5
+Not Found: /sandbox_report/mission_list/6/5/
+current_page 1
+current_page 1
+Not Found: /sandbox_report/mission_list/6/
+Not Found: /sandbox_report/mission_list/10/
+current_page 1
+current_page 1
+current_page 1
+current_page 1
+['http://bzw.sogou.gd.ted/jarvan', 'pid=2&pn=网页前台测试组&ip=quickcache02.web.sjs.ted&ana=7,3,8,4,4,9&nt=每秒平均cost,cost,req/s,ret有结果率,sret有结果率,时间分布&purpose=one&viewId=1994&monitorrids=771,772,773,774,775,776&pf=3&tid=645&starttime=2019-12-04 16:57:00&endtime=2019-12-04 19:26:00', 'show.jarvan.monitor.logsMonitor']
+{'val_dict': OrderedDict([('established', ['10946', '18674', '18668.7']), ('close_wait', ['0', '0', '0.0']), ('VSZ', ['129253712', '88333868', '144765685.1']), ('RSS', ['20163664', '44455916', '43708557.2']), ('%CPU', ['100.0', '994.1', '1626.0']), ('py_ret1', ['1.0', '1.0', '1.0']), ('py_ret2', ['1.0', '1.0', '1.0']), ('py_avgcost1', ['292.0', '464.0', '414.732']), ('py_qps1', ['0.009', '0.029', '0.02'])]), 'monitor_link': 'http://bzw.sogou.gd.ted/jarvan?&pid=2&pn=网页前台测试组&ip=quickcache02.web.sjs.ted&ana=7,3,8,4,4,9&nt=每秒平均cost,cost,req/s,ret有结果率,sret有结果率,时间分布&purpose=one&viewId=1994&monitorrids=771,772,773,774,775,776&pf=3&tid=645&starttime=%32%30%31%39%2D%31%32%2D%30%34%20%31%36%3A%35%37%3A%30%30&endtime=%32%30%31%39%2D%31%32%2D%30%34%20%31%39%3A%32%36%3A%30%30#show.jarvan.monitor.logsMonitor', 'missionid': 7}
+Not Found: /sandbox_report/mission_list/7/6/
+['http://bzw.sogou.gd.ted/jarvan', 'pid=2&pn=网页前台测试组&ip=quickcache02.web.sjs.ted&ana=7,3,8,4,4,9&nt=每秒平均cost,cost,req/s,ret有结果率,sret有结果率,时间分布&purpose=one&viewId=1994&monitorrids=771,772,773,774,775,776&pf=3&tid=645&starttime=2019-12-04 16:57:00&endtime=2019-12-04 19:26:00', 'show.jarvan.monitor.logsMonitor']
+{'val_dict': OrderedDict([('established', ['10946', '18674', '18668.7']), ('close_wait', ['0', '0', '0.0']), ('VSZ', ['129253712', '88333868', '144765685.1']), ('RSS', ['20163664', '44455916', '43708557.2']), ('%CPU', ['100.0', '994.1', '1626.0']), ('py_ret1', ['1.0', '1.0', '1.0']), ('py_ret2', ['1.0', '1.0', '1.0']), ('py_avgcost1', ['292.0', '464.0', '414.732']), ('py_qps1', ['0.009', '0.029', '0.02'])]), 'monitor_link': 'http://bzw.sogou.gd.ted/jarvan?&pid=2&pn=网页前台测试组&ip=quickcache02.web.sjs.ted&ana=7,3,8,4,4,9&nt=每秒平均cost,cost,req/s,ret有结果率,sret有结果率,时间分布&purpose=one&viewId=1994&monitorrids=771,772,773,774,775,776&pf=3&tid=645&starttime=%32%30%31%39%2D%31%32%2D%30%34%20%31%36%3A%35%37%3A%30%30&endtime=%32%30%31%39%2D%31%32%2D%30%34%20%31%39%3A%32%36%3A%30%30#show.jarvan.monitor.logsMonitor', 'missionid': 7}
+['http://bzw.sogou.gd.ted/jarvan', 'pid=2&pn=网页前台测试组&ip=quickcache02.web.sjs.ted&ana=7,3,8,4,4,9&nt=每秒平均cost,cost,req/s,ret有结果率,sret有结果率,时间分布&purpose=one&viewId=1994&monitorrids=771,772,773,774,775,776&pf=3&tid=645&starttime=2019-12-04 16:57:00&endtime=2019-12-04 19:26:00', 'show.jarvan.monitor.logsMonitor']
+{'val_dict': OrderedDict([('established', ['10946', '18674', '18668.7']), ('close_wait', ['0', '0', '0.0']), ('VSZ', ['129253712', '88333868', '144765685.1']), ('RSS', ['20163664', '44455916', '43708557.2']), ('%CPU', ['100.0', '994.1', '1626.0']), ('py_ret1', ['1.0', '1.0', '1.0']), ('py_ret2', ['1.0', '1.0', '1.0']), ('py_avgcost1', ['292.0', '464.0', '414.732']), ('py_qps1', ['0.009', '0.029', '0.02'])]), 'monitor_link': 'http://bzw.sogou.gd.ted/jarvan?&pid=2&pn=网页前台测试组&ip=quickcache02.web.sjs.ted&ana=7,3,8,4,4,9&nt=每秒平均cost,cost,req/s,ret有结果率,sret有结果率,时间分布&purpose=one&viewId=1994&monitorrids=771,772,773,774,775,776&pf=3&tid=645&starttime=%32%30%31%39%2D%31%32%2D%30%34%20%31%36%3A%35%37%3A%30%30&endtime=%32%30%31%39%2D%31%32%2D%30%34%20%31%39%3A%32%36%3A%30%30#show.jarvan.monitor.logsMonitor', 'missionid': 7}
+Not Found: /sandbox_report/mission_list/
+current_page 1
+Not Found: /sandbox_report/mission_list/
+Not Found: /sandbox_report/mission_list/
+Not Found: /sandbox_report/mission_list/
+Not Found: /sandbox_report/mission_list/
+Not Found: /sandbox_report/mission_list/
+...gracefully killing workers...
+Gracefully killing worker 2 (pid: 12048)...
+Gracefully killing worker 4 (pid: 12050)...
+Gracefully killing worker 5 (pid: 12051)...
+Gracefully killing worker 7 (pid: 12053)...
+Gracefully killing worker 1 (pid: 12047)...
+Gracefully killing worker 3 (pid: 12049)...
+Gracefully killing worker 6 (pid: 12052)...
+Gracefully killing worker 8 (pid: 12055)...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+worker 6 buried after 1 seconds
+worker 7 buried after 1 seconds
+worker 8 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /search/odin/yinjingjing/python/sandbox_report/django_sandbox
+closing all non-uwsgi socket fds > 2 (max_fd = 65535)...
+found fd 3 mapped to socket 0 (127.0.0.1:8032)
+running /usr/local/bin/uwsgi
+[uWSGI] getting INI configuration from uwsgi.ini
+*** Starting uWSGI 2.0.18 (64bit) on [Thu Dec  5 16:32:44 2019] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-11) on 02 December 2019 08:38:00
+os: Linux-3.10.0-327.el7.x86_64 #1 SMP Thu Nov 19 22:10:57 UTC 2015
+nodename: bjsjs_96_115
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 24
+current working directory: /search/odin/yinjingjing/python/sandbox_report/django_sandbox
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /search/odin/yinjingjing/python/sandbox_report/django_sandbox
+your processes number limit is 32768
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address 127.0.0.1:8032 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.1 (default, Sep 21 2018, 16:58:03)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-11)]
+Python main interpreter initialized at 0x15fe350
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+setting request body buffering size to 32768 bytes
+mapped 1209240 bytes (1180 KB) for 8 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x15fe350 pid: 12025 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 12025)
+spawned uWSGI worker 1 (pid: 22187, cores: 1)
+spawned uWSGI worker 2 (pid: 22188, cores: 1)
+spawned uWSGI worker 3 (pid: 22189, cores: 1)
+spawned uWSGI worker 4 (pid: 22190, cores: 1)
+spawned uWSGI worker 5 (pid: 22191, cores: 1)
+spawned uWSGI worker 6 (pid: 22192, cores: 1)
+spawned uWSGI worker 7 (pid: 22193, cores: 1)
+spawned uWSGI worker 8 (pid: 22194, cores: 1)
+*** Stats server enabled on 127.0.0.1:8033 fd: 24 ***
+current_page 1
+current_page 1
+current_page 1
+current_page 1
+current_page 2
+{'val_dict': OrderedDict(), 'monitor_link': None, 'missionid': 1}
+current_page 1
+current_page 1
+current_page 2
+current_page 1
+current_page 1
+current_page 2
+{'val_dict': OrderedDict(), 'monitor_link': None, 'missionid': 5}
+current_page 1
+['http://bzw.sogou.gd.ted/jarvan', 'pid=2&pn=网页前台测试组&ip=quickcache02.web.sjs.ted&ana=7,3,8,4,4,9&nt=每秒平均cost,cost,req/s,ret有结果率,sret有结果率,时间分布&purpose=one&viewId=1790&monitorrids=721,722,723,724,725,726&pf=3&tid=628&starttime=2019-11-26 16:35:00&endtime=2019-11-26 17:15:00', 'show.jarvan.monitor.logsMonitor']
+{'val_dict': OrderedDict([('established', ['18667', '18674', '18673.9']), ('close_wait', ['0', '0', '0.0']), ('VSZ', ['139791852', '142433816', '142338729.1']), ('RSS', ['41937728', '43853944', '43291317.7']), ('DATE_TIME', ['2019-11-26 16:35:01', '2019-11-26 17:15:01', '0.0']), ('%CPU', ['1006', '993.8', '1278.8']), ('qps1', ['71.587', '73.5', '72.847']), ('ret1', ['0.924', '0.97', '0.957']), ('avgcost1', ['192.711', '229.818', '205.473']), ('ret2', ['0.898', '0.96', '0.941'])]), 'monitor_link': 'http://bzw.sogou.gd.ted/jarvan?&pid=2&pn=网页前台测试组&ip=quickcache02.web.sjs.ted&ana=7,3,8,4,4,9&nt=每秒平均cost,cost,req/s,ret有结果率,sret有结果率,时间分布&purpose=one&viewId=1790&monitorrids=721,722,723,724,725,726&pf=3&tid=628&starttime=%32%30%31%39%2D%31%31%2D%32%36%20%31%36%3A%33%35%3A%30%30&endtime=%32%30%31%39%2D%31%31%2D%32%36%20%31%37%3A%31%35%3A%30%30#show.jarvan.monitor.logsMonitor', 'missionid': 6, 'ip': 'quickcache02.web.sjs.ted', 'path': '/search/odin/daemon/cache/cache_test/WebCache'}
+current_page 1
+{'val_dict': OrderedDict(), 'monitor_link': None, 'missionid': 7}

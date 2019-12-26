@@ -1,0 +1,55 @@
+#! /usr/bin/env bash
+export PYTHONUNBUFFERED=1
+
+NAME="uwsgi.ini"
+process="main_[pm]*"
+stop_uwsgi(){
+    if [ ! -n "$NAME" ];then
+        echo "no arguments"  
+        exit;
+    fi
+
+    echo $process  
+    ID=`ps -ef | grep "$process" | grep -v "$0" | grep -v "grep" | awk '{print $2}'`
+    echo $ID  
+    echo "################################################"  
+    for id in $ID
+    do
+    kill -9 $id
+    echo "kill $id"  
+    done
+    echo  "################################################"  
+}
+
+if [ $# -ne 1 ]
+then
+    echo "parameter err. must only 1."
+    exit
+fi
+
+if [ "$1" == "start" ]
+then
+    uwsgi  "$NAME"
+    #uwsgi -x "$NAME"
+    exit
+fi
+
+if [ "$1" == "stop" ]
+then
+    stop_uwsgi
+    exit
+fi
+
+if [ "$1" == "restart" ]
+then
+    kill -9 `ps aux|grep vrTool|grep -v grep|awk '{print $2}'`
+    sleep 0.5
+    uwsgi  "$NAME"
+    #uwsgi -x "$NAME"
+    exit
+fi
+
+if [ "$1" == "reload" ]
+then
+    uwsgi --reload uwsgi.pid
+fi 
