@@ -4,6 +4,11 @@ import pymysql
 import time
 import subprocess
 from conf import *
+from itertools import chain
+import email
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
+from email.header import Header
 
 ###### global  ######
 db = pymysql.connect(database_host, database_user, database_passwd ,database_db, charset="utf8")
@@ -33,9 +38,7 @@ def get_check_id():
 
 def main():
 
-    while True:      
-        time.sleep(2)
-        
+    while True:              
         check_id = get_check_id()
         print("check_id:%d" % check_id)
         if check_id != -1:
@@ -45,8 +48,12 @@ def main():
         print("report_id:%d" % report_id)
         if report_id != -1:
             subprocess.Popen(['/usr/local/bin/python3', 'gen_report.py','%d' % report_id], shell = False, stdout = log_fd, stderr = log_fd, cwd=script_path)
+            subprocess.Popen(['/usr/local/bin/python3', 'send_mail.py','%d' % report_id], shell = False, stdout = log_fd, stderr = log_fd, cwd=script_path)
 
-
+        time.sleep(5)
+        
+        
+        
 
 if __name__ == "__main__":
     main()               
